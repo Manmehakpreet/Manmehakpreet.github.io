@@ -7,15 +7,22 @@
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/434fb5e47c.js" crossorigin="anonymous"></script>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-            </style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap');
+        </style>
+        <!-- Capital one bold font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap');
+        </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div id="b1" class="box">
             <div id="image">
                 <img src="manmehak.jpg">
-                <h1>Manmehakpreet Singh </h1>
+                <h1>Manmehakpreet  Singh </h1>
                 <a href="#card-title"><h2>Web Developer | Photographer | Software Developer</h2></a><br>
                 <div id="buttons">
                 <a href="#b2"><button id="resume"><i class="fas fa-download"></i> Resume</button></a>
@@ -70,41 +77,27 @@
         <div id="form">
             <fieldset>
                 <legend>Contact me</legend>
-                <form id="contactform" method="POST" action="https://httpbin.org/post">  <!-- onsubmit="return formValidation();"> -->
-                <!-- <table>
-                    <tr>
-                        <td>Name</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>E-mail</td>
-                        <td><input type="email"></td>
-                    </tr>
-                    <tr>
-                        <button type="submit">Submit</button>
-                    </tr>
-                </table> -->
+                <form id="contactform" method="POST" action="https://httpbin.org/post">
                 <div>
                     <label for="name"> Name:  </label> 
-                    <input type="text" id="name" name="name" size="25" placeholder="Enter your Name"required/>
+                    <input type="text" id="name" name="name" size="35" placeholder="Enter your Name"required/>
                 </div>
                 <div>
                     <label for="email"> Email address: </label> 
-                    <input type="email" id="email" name="email" size="25" placeholder="Enter your e-mail"required/>
+                    <input type="email" id="email" name="email" size="35" placeholder="Enter your e-mail"required/>
+                </div>
+                <div>
+                    <label for="phone"> Phone Number:  </label> 
+                    <input type="tel" id="phone" name="phone" size="35" placeholder="Enter your Phone Number"required/>
                 </div>
                 <div>
                     <label for="address"> Address: </label> 
-                    <input type="text" id="address" name="address" size="25" placeholder="Enter your address"required/>
-                </div>
-                
-                <div>
-                    <label for="phone"> Phone Number:  </label> 
-                    <input type="tel" id="phone" name="phone" size="25" placeholder="Enter your Phone Number"required/>
+                    <input type="text" id="address" name="address" size="35" placeholder="Enter your address"required/>
                 </div>
 
                 <div>
-                    <label for="phone"> City:  </label>
-                <input type="text" list="city" name="city" size="25" placeholder="Enter your city" required>
+                    <label for="city"> City:  </label>
+                <input type="text" list="city" name="city" size="35" placeholder="Enter your city" required>
                 <datalist id="city">
                     <option label="Brampton" value="Brampton"></option>
                     <option label="Calgary" value="Calgary"></option>
@@ -136,7 +129,7 @@
                 </div>
                 <div>
                     <label for="postalcode"> Postal Code: </label> 
-                    <input type="text" id="postalcode" title="eg. L4L 1A6, l4l 1a6, L4L1A6, l4l1a6" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" name="postalcode" size="25" placeholder="Enter your postal code"required/>
+                    <input type="text" id="postalcode" title="eg. L4L 1A6" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" name="postalcode" size="35" placeholder="Enter your postal code"required/>
                 </div>
                 
                 <div>
@@ -151,7 +144,7 @@
 
                 <div id="rate">
                     <label for="rate"> Hourly Rate ($): </label> 
-                    <input type="number" id="hourlyrate" name="hourlyrate" size="15" placeholder="Enter hourly rate"/>
+                    <input type="number" id="hourlyrate" name="hourlyrate" size="35" placeholder="Enter hourly rate"/>
                 </div>
                 <br>
                 <div>
@@ -159,22 +152,27 @@
                     <textarea form="contactform" rows="5" cols="80" name="message">
                      </textarea>
                 </div>
+                <br>
                 <div id="attachments">
                     Attachments <input type="file">
                 </div>
                 <br>
-                <div>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Clear">
+                <div class="submitbuttons">
+                    <input id="submit" type="submit" value="Submit">
+                    <input id="submit" type="reset" value="Clear">
                 </div>
                 </form>
             </fieldset>
-            <div id="icons">            
-                <a href="https://www.linkedin.com/in/manmehakpreet-singh-93a8701aa/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/preetchhina42/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/preetchhina42" class="fa fa-twitter"></a></div>
+
         </div>
         <footer>
+            <div id="icons">
+                <a href="mailto: manmehakpreet1@gmail.com" class="fa fa-envelope-open-text"></a>
+                <a href="tel: 4373310291" class="fa fa-phone-alt"></a>
+                <a href="https://www.linkedin.com/in/manmehakpreet-singh-93a8701aa/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/preetchhina42/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/preetchhina42" class="fa fa-twitter"></a>
+            </div>
         </footer>
         <script src="data.js"></script>
         <script src="observations.js"></script>
