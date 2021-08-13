@@ -1,3 +1,10 @@
+/*
+Name: Manmehakpreet Singh
+StudentID: 139748206
+email: manmehakpreet-singh@myseneca.ca
+websiteLink: https://manmehakpreet.github.io/
+reflectionLink: https://youtu.be/OqLivHjj7fE
+*/
 function updateCards(observations) {
     // Populate the table with all observation data we want to show
     observations.forEach((observation) => {
